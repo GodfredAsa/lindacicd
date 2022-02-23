@@ -15,6 +15,11 @@ public class GithubCicdActionsApplication {
 		return  "Hello, Someone";
 	}
 
+	@GetMapping
+	public String sayHi(){
+		return  "Hi, Linda";
+	}
+
 	public static void main(String[] args) {
 		SpringApplication.run(GithubCicdActionsApplication.class, args);
 	}
