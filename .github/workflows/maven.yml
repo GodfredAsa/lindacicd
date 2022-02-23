@@ -29,10 +29,10 @@ jobs:
 
 #      this line of code pushes to docker and generate an image there
 
-#    - name: Build and Push Docker Image
-#      uses: mr-smithers-excellent/docker-build-push@v5
-#      with:
-#        image: degreatasaa/obcicd-18
-#        registry: docker.io
-#        username: ${{ secrets.DOCKER_USERNAME }}
-#        password: ${{ secrets.DOCKER_PASSWORD }}
+    - name: Build and Push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: degreatasaa/obcicd-18
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
